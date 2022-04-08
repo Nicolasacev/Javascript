@@ -1,0 +1,207 @@
+/*-------------------------------------------------Global-------------------------------------------------*/
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*---------------------------------------------------------navbar--------------------------------------------------------*/
+
+
+div.buttons{
+    padding: 15px;
+}
+
+nav {
+    background: linear-gradient(to bottom, rgb(57, 100, 192), white);
+}
+
+/*-------------------------------------------------------- Footer  ------------------------------------------------------*/
+
+   .footer{
+    text-align: center;
+    background-color: grey;
+    height: 9.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .footer p{
+    color: aliceblue;
+}
+
+/*----------------------------------------------- Inicia Pagina Home------------------------------------------------ */
+
+div.presentacion{
+    height: 46.875rem;
+    background: linear-gradient(to bottom, rgb(108, 131, 180), white);
+}
+
+p{
+    text-align:center;
+}
+
+.preguntaHome{
+   padding-top: 15rem;
+}
+
+/*-----------------------------------breakpoint 768px--------------------------------------*/
+
+
+
+
+
+
+
+/*----------------------------------------------- Inicia Pagina Productos------------------------------------------------ */
+
+.nav-link img{
+    height: 25px;
+    width: 25px;
+}
+
+.contadorCarrito{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-left: 4px;
+    padding: 5px;
+    color: orange;
+}
+
+/*----------------------------------------------- card------------------------------------------------ */
+
+.tarjetas {
+    display: flex;    
+    flex-flow: wrap; 
+    background-color: lightsteelblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 11.875rem;
+    /*height: 17.5rem;*/
+    border-radius: 0.625rem;
+    background: #f1f5f3;
+    box-shadow: 1px 5px 60px 0px #4646466b;
+    margin: 1.25rem;
+   }
+   
+   .card .picture,.card .name,.card .jobtitle,.card .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .card .picture {
+    border: 0.125rem solid #4646466b;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 20%;
+    margin: auto;
+    margin-top: 0.9375rem;
+    padding-top: 1.25rem;
+    cursor: pointer;
+    transition: all .3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+   }
+   
+   .card .picture1 {
+    background-image: url(/desafio_clase_9_eventos/assets/img/motorBlock.jpg);
+   }
+
+   .card .picture2 {
+    background-image: url(/desafio_clase_9_eventos/assets/img/optica.jpg);
+   }
+
+   .card .picture3 {
+    background-image: url(/desafio_clase_9_eventos/assets/img/diferencial.jpg);
+   }
+
+   .card .picture4 {
+    background-image: url(/desafio_clase_9_eventos/assets/img/puerta.png);
+   }
+
+   .card .picture p {
+    font-size: .8em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   
+   .buttons > div {
+    padding: .5em;
+   }
+   
+   button {
+    padding: .5em;
+    outline: none;
+    background: transparent;
+    border: 0.0625rem solid #0f0f0f6b;
+    border-radius: .4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .3s;
+    font-size: .7em;
+   }
+
+   .botonCompra{
+       background-color: orange;
+   }
+   
+   .card .picture:hover,button:hover {
+    filter: brightness(85%);
+   }
+   
+   .card .name p {
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 1em;
+   }
+   
+   .card .jobtitle p {
+    margin-bottom: 10%;
+    font-size: .54em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+   }
+   
+/*-----------------------------------breakpoint 768px--------------------------------------*/
+
+@media (min-width: 768px) {
+  
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    div.card{
+        width: 40%;
+        height: 30rem;
+
+
+    }
+
+    .card .picture {
+        width: 80%;
+        height: 100%;
+    }
+
+    div .picture{
+        width: 80%;
+        height: 100rem;
+        padding: 6rem;
+    }
+}
+
+/*-----------------------------------breakpoint 1024px--------------------------------------*/
+
+@media (min-width: 1024px) {
+    
+}
+
