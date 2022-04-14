@@ -57,7 +57,6 @@ repuestos.forEach( (repuesto) =>{
 
 })
 
-/*----------------------------------------------------------------------------------------------------------------------------------*/
 
 //EVENTOS EN LOS BOTONES DEL CARRITO
 
@@ -73,6 +72,19 @@ let contador = 0
 function addToCart() {
     contador++
     contadorCarrito.innerHTML = `${contador}`
+
+
+//storage y Json
+
+const enCarritoJson = JSON.stringify(contador);
+
+localStorage.setItem("enCarrito", enCarritoJson);
+
+
+//const almacenado = JSON.parse(localStorage.getItem(enCarritoJson));
+
+//contador = almacenado
+
 }
 
 //CALCULADORA DE IVA
