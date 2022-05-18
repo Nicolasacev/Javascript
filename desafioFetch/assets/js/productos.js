@@ -1,4 +1,3 @@
-
 const $tarjetero = document.querySelector("#tarjetero"),
 $template = document.getElementById("cardTemplate").content,
 $fragment = document.createDocumentFragment()
@@ -50,5 +49,4 @@ function verDetalle (e){
      precioProd.innerHTML = precioItem
 }
 })
-
 
